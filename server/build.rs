@@ -1,5 +1,5 @@
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let proto_root = "../../uq/proto";
+    let proto_root = "../proto";
     println!("cargo:rerun-if-changed={}", proto_root);
 
     connectrpc_axum_build::compile_dir(proto_root)
