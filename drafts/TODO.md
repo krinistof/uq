@@ -23,6 +23,8 @@ A proof-of-concept to demonstrate `uq`'s capabilities for peer-to-peer state syn
     - *Event*: `PassCard(FromPK, ToPK, EncryptedCard, Signature)`
     - Requires targeted encryption (ECDH shared secret derived from `ToPK`).
 
-### Architecture
-- **Topic**: One topic per Game Session.
-- **Validation**: Clients validate the legality of moves (e.g., cannot draw from empty deck, cannot pass card you don't hold) by replaying the event log.
+## 3. Infrastructure & Testing
+
+### Testing
+- [ ] **Binary ConnectRPC Tests:** Add tests for binary connectrpc.
+- [ ] **Regression Benchmarking:** Implement regression benchmarking to prevent merging slower implementations. Compare timed debug logs of all tests on both commits (PR vs Base).
