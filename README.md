@@ -1,6 +1,8 @@
 # UniQue (uq)
 
-UniQue is a standalone identity and protocol library.
+UniQue is a standalone identity and protocol library. It provides a secure, decentralized foundation for building local-first applications.
+
+**For a detailed architectural overview, see [docs/architecture.md](docs/architecture.md).**
 
 ## Components
 
