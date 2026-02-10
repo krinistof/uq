@@ -60,7 +60,7 @@
             # --- Client Checks ---
             if [ "$MODE" = "all" ] || [ "$MODE" = "lint" ]; then
                 echo -e "''${BLUE}[UQ Client] Installing & Building...''${NC}"
-                (cd client && npm install && npm run build)
+                (cd client && npm install && npm run generate && npm run build)
             fi
 
             # --- Server Checks ---
@@ -90,7 +90,7 @@
             NC='\033[0m'
             
             echo -e "''${BLUE}[UQ Client] Building...''${NC}"
-            (cd client && npm install && npm run build)
+            (cd client && npm install && npm run generate && npm run build)
 
             echo -e "''${BLUE}[UQ Server] Building...''${NC}"
             (cd server && cargo build)
