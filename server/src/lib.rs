@@ -1,6 +1,7 @@
 pub mod api;
 pub mod db;
 
+#[allow(clippy::new_without_default)]
 pub mod uq_proto {
     include!(concat!(env!("OUT_DIR"), "/uq.v1.rs"));
 }
