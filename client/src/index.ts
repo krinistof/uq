@@ -82,3 +82,4 @@ export async function sync(
 
 // Re-export proto types
 export * from "./gen/uq/v1/uq_pb.js";
+export * from "./logger.js";
